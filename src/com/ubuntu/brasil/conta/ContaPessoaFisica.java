@@ -1,17 +1,19 @@
-package com.ubuntu.brasil.Pessoa;
+package com.ubuntu.brasil.conta;
 
-public class Conta {
+import com.ubuntu.brasil.Pessoa.Pessoa;
+
+public class ContaPessoaFisica extends Pessoa {
     private String agencia;
     private String numeroConta;
     private Double saldo;
 
-    public Conta(String agencia, String numeroConta, Double saldo) {
+    public ContaPessoaFisica(String agencia, String numeroConta, Double saldo) {
         this.agencia = agencia;
         this.numeroConta = numeroConta;
         this.saldo = saldo;
     }
 
-    public Conta(){
+    public ContaPessoaFisica(){
 
     }
 
