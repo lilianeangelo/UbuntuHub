@@ -1,13 +1,13 @@
 package com.ubuntu.brasil.animais;
 
 public abstract class AnimaisTerrestres {
-    private boolean patas;
-    private boolean pelo;
-    private String peso;
-    private String nicho;
+    protected boolean viveNaAgua; //nadar
+    protected boolean pelo;
+    protected String peso;
+    protected String nicho;
 
-    public AnimaisTerrestres(boolean patas, boolean pelo, String peso, String nicho) {
-        this.patas = patas;
+    public AnimaisTerrestres(boolean viveNaAgua, boolean pelo, String peso, String nicho) {
+        this.viveNaAgua = viveNaAgua;
         this.pelo = pelo;
         this.peso = peso;
         this.nicho = nicho;
@@ -17,12 +17,12 @@ public abstract class AnimaisTerrestres {
 
     }
 
-    public boolean isPatas() {
-        return patas;
+    public boolean isViveNaAgua() {
+        return viveNaAgua;
     }
 
-    public void setPatas(boolean patas) {
-        this.patas = patas;
+    public void setViveNaAgua(boolean viveNaAgua) {
+        this.viveNaAgua = viveNaAgua;
     }
 
     public boolean isPelo() {
@@ -48,26 +48,13 @@ public abstract class AnimaisTerrestres {
     public void setNicho(String nicho) {
         this.nicho = nicho;
     }
+// Aula 3 - Polimorfismo de sobreposição
 
-    public abstract void buscaComida();
+    public abstract void come();
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
+    public abstract void movimenta();
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
+    public abstract void respira();
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+    public abstract void emiteSom();
 }
