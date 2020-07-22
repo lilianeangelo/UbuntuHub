@@ -2,7 +2,7 @@ package com.ubuntu.brasil.animais.felino;
 
 import com.ubuntu.brasil.animais.AnimaisTerrestres;
 
-abstract class Felino extends AnimaisTerrestres {
+public class Felino extends AnimaisTerrestres {
     private boolean bigode;
     private String patas;
     private String corDoPelo;

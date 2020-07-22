@@ -2,7 +2,7 @@ package com.ubuntu.brasil.animais.canino;
 
 import com.ubuntu.brasil.animais.AnimaisTerrestres;
 
-abstract class Canino extends AnimaisTerrestres {
+public abstract class Canino extends AnimaisTerrestres {
     private String tipo;
 
     public Canino(boolean viveNaAgua, boolean pelo, String peso, String nicho, String tipo) {
@@ -31,7 +31,9 @@ abstract class Canino extends AnimaisTerrestres {
 
     @Override
     public void emiteSom() {
+        System.out.println("Som de canino");
 
     }
     public abstract void rosnar();
+
 }

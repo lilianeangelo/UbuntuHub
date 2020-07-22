@@ -31,8 +31,8 @@ public class Cachorro extends Canino {
     }
 
     @Override
-    public void emiteSom() {
-        super.emiteSom();
+    public void emiteSom(){
+        System.out.println("Au, au, au");
     }
 
     @Override
@@ -41,10 +41,28 @@ public class Cachorro extends Canino {
     }
 
     public void pegaBolinha(){
+        System.out.println("Cachorros adoram buscar bolinha");
 
     }
 
-    public void latir(){
+    public void fazBagunca(){
+        System.out.println("Cachorros fazem muita bagunça!");
+    }
+    public void reagir(String frase){
+        if(frase == "Vem comer, Lua!"){
+            System.out.println("Abana o rabinho");
+        }else {
+            System.out.println("Latir");
+        }
+    }
+
+    public void reagir(boolean dono){
+        if (dono){
+            System.out.println("Pegar a bolinha");
+        }
+        else{
+            System.out.println("Permanece deitado na caminha");
+        }
 
     }
 }
