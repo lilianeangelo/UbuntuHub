@@ -1,9 +1,9 @@
 package revisao;
 
 abstract class Casa {
-    private String janela;
-    private String porta;
-    private String escada;
+    protected String janela;
+    protected String porta;
+    protected String escada;
     // protected vs private
     public Casa(){
     }
