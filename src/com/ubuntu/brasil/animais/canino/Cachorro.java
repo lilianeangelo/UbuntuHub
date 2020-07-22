@@ -8,6 +8,9 @@ public class Cachorro extends Canino {
         super(viveNaAgua, pelo, peso, nicho, tipo);
         this.raca = raca;
     }
+    public Cachorro(){
+
+    }
 
     public String getRaca() {
         return raca;

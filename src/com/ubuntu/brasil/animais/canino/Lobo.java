@@ -7,6 +7,9 @@ public class Lobo extends Canino{
         super(viveNaAgua, pelo, peso, nicho, tipo);
         this.corDoOlho = corDoOlho;
     }
+    public Lobo(){
+
+    }
 
     public String getCorDoOlho() {
         return corDoOlho;

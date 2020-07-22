@@ -59,6 +59,7 @@ abstract class Felino extends AnimaisTerrestres {
 
     @Override
     public void emiteSom() {
+        System.out.println("Som do felino");
 
     }
 
